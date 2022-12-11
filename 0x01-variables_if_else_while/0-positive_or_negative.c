@@ -3,12 +3,9 @@
 #include <time.h>
 
 /**
-  * main - main function to generate a random number
-  *
-  * Return: Always 0 (Success)
-  *
+  *main - print if the numbe is positive,negative or 0
+  *Return: Always 0
   */
-
 int main(void)
 {
 	int n;
@@ -16,17 +13,15 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	if (n < 0)
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
 	}
 	else if (n == 0)
-	else if (n == 0)
 	{
 		printf("%d is zero\n", n);
 	}
-	else if (n < 0)
+	else
 	{
 		printf("%d is negative\n", n);
 	}
